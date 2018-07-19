@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="ButtonStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/btn_size</item>
+    </style>
+
+    <style name="CustomTextAppearance.Login" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/et_til_text_size</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textColorHighlight">@color/colorPrimary</item>
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--   buttons color
+        <item name="colorAccent">@color/pink</item>
+        title and message color
+        <item name="android:textColorPrimary">@color/red</item>-->
+
+    </style>
+    <style name="EditTextStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/et_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+
+    </style>
+
+    <style name="TextInputLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/inputtext_et_margin</item>
+        <item name="android:layout_marginBottom">@dimen/inputtext_et_margin</item>
+    </style>
+
+    <style name="TextInputLayout.Scan" parent="TextInputLayout">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:theme">@style/TextInputLayout.Theme.Scan</item>
+        <item name="android:textSize">@dimen/tv_scan_size</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:layout_marginTop">@dimen/form_question_top_margin</item>
+    </style>
+    <style name="TextInputLayout.Theme.Scan" parent="AppTheme">
+        <item name="colorButtonNormal">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/black</item>
+
+    </style>
+    <style name="CustomTextAppearance.Scan" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/tv_scan_size</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@color/colorAccent</item>
+    </style>
+    <style name="EditTextTheme.Questions" parent="AppTheme">
+        <item name="colorButtonNormal">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorControlActivated">@android:color/black</item>
+        <item name="colorControlHighlight">@android:color/black</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/black</item>
+
+    </style>
+    <style name="EditTextStyle.Questions">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/et_size_scan</item>
+        <item name="android:theme">@style/EditTextTheme.Questions</item>
+        <item name="android:paddingTop">@dimen/form_ques_ans_top_margin</item>
+
+    </style>
+    <style name="TextView.Scan" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/tv_scan_size</item>
+
+    </style>
+    <style name="TextView.Scan.Heading" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/tv_scan_heading_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

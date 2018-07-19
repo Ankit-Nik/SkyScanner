@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"  >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Member Details"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="HouseHold Tin No : " />
+                            <TextView
+                                android:id="@+id/tin_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:text="Member Tin No : " />
+
+                        <TextView
+                            android:id="@+id/member_txt_tin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="Name : " />
+
+                            <EditText
+                                android:id="@+id/txt_name"
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="Relation : " />
+
+
+                            <Spinner
+                                android:id="@+id/relation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </Spinner>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="Gender : " />
+
+                            <Spinner
+                                android:id="@+id/gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </Spinner>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="DOB : " />
+
+                            <EditText
+                                android:id="@+id/txt_dob"
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:maxLength="11"
+                                android:singleLine="true"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:inputType="none"
+                                android:focusable="false"
+                                android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="Status : " />
+
+                            <Spinner
+                                android:id="@+id/status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </Spinner>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="Age : " />
+
+                            <EditText
+                                android:id="@+id/txt_age"
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:maxLength="3"
+                                android:singleLine="true"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:inputType="none"
+                                android:focusable="false"
+                                android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="Village : " />
+
+                            <TextView
+                                android:id="@+id/txt_village"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="GP : " />
+
+                            <TextView
+                                android:id="@+id/txt_GP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="Block : " />
+
+                            <TextView
+                                android:id="@+id/txt_block"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:text="District : " />
+
+                            <TextView
+                                android:id="@+id/txt_district"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="Smartcard" />
+
+                <EditText
+                    android:id="@+id/txt_smartcard_u"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                    android:maxLength="17"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="PDS" />
+
+                <EditText
+                    android:id="@+id/txt_pds_u"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.4"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                    android:maxLength="14"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="MGNREGA CH" />
+
+                <EditText
+                    android:id="@+id/txt_manrega_u1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="/" />
+
+                <EditText
+                    android:id="@+id/txt_manrega_u2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:layout_height="wrap_content"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:gravity="center"  >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Aadhaar Details"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:gravity="center|left"/>
+
+                    <Button
+                        android:id="@+id/scan_aadhar"
+                        style="@style/ButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/aadhar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:text="Aadhaar No : " />
+
+                        <EditText
+                            android:id="@+id/txt_aadhar_no"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:maxLength="14"
+                            android:minLines="12"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:text="Name(As in Aadhar) : " />
+
+                        <EditText
+                            android:id="@+id/txt_aadhar_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="10dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/add_new_member"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Member >>" />
+                <Button
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:maxLines="1"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:text="Next >>" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/ButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:text="Next >>" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

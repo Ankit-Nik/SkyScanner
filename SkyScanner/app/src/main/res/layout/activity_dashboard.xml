@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/button_padding"
+    tools:context="com.sky.scanner.ui.dashboard.DashboardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:text="@string/scan_info"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/scan_heading_text_size"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_heading"
+            android:layout_marginTop="@dimen/five"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/uid"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_uid"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/name"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/gender"
+
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/yob"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_yob"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/co"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_co"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/house"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_house"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/street"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_street"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/lm"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_lm"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/loc"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_loc"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/vtc"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_vtc"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/po"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_po"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/dist"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_dist"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/subdist"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_subdist"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/state"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/pc"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_pc"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Scan.Heading"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/dob"
+                        android:textAppearance="?attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:id="@+id/tv_dob"
+                        style="@style/TextView.Scan"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/five"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+</android.support.design.widget.CoordinatorLayout>
